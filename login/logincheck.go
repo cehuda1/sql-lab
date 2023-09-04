@@ -30,7 +30,7 @@ func LoginCheck(w http.ResponseWriter, r *http.Request) {
 		r.ParseForm()
 		username := r.PostForm.Get("username")
 		password := r.PostForm.Get("password")
-		query := fmt.Sprintf("SELECT username, password FROM vulnlogin WHERE username='%v' AND password='%v'", username, password)
+		query := fmt.Sprintf("SELECT username, password FROM users WHERE username='%v' AND password='%v'", username, password)
 		q, err := db.Query(query)
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)

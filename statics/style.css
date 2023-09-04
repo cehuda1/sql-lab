@@ -3,21 +3,22 @@
 * { box-sizing: border-box; }
 
 body {
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-family: "ADLaM Display", cursive;
   color:white;
   font-size:12px;
-  background:#333 url(/images/classy_fabric.png);
+  background: linear-gradient(450deg, #1e7803, #022401);
 }
+
 
 form {
  	background:#111;
   width:300px;
   margin:30px auto;
   border-radius:0.4em;
-  border:1px solid #191919;
+  border:1px solid #ffffff;
   overflow:hidden;
   position:relative;
-  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px 5px rgb(0, 0, 0);
 }
 
 form:after {
@@ -40,7 +41,7 @@ form:before {
   border-radius:50%;
   left:34%;
   top:-7px;
-  box-shadow: 0 0 6px 4px #fff;
+  box-shadow: 0 0 6px 4px #ffffff;
 }
 
 .inset {
@@ -50,11 +51,12 @@ form:before {
 
 form h1 {
   font-size:18px;
-  text-shadow:0 1px 0 black;
+  text-shadow:0 1px 0 rgb(255, 249, 249);
   text-align:center;
   padding:15px 0;
-  border-bottom:1px solid rgba(0,0,0,1);
+  border-bottom:1px solid rgb(255, 253, 253);
   position:relative;
+  color: #00ff2f;
 }
 
 form h1:after {
@@ -67,12 +69,12 @@ form h1:after {
   left:50px;
   pointer-events:none;
   transform:rotate(70deg);
-  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+  background:linear-gradient(50deg, rgba(0, 255, 42, 0.13), rgba(0,0,0,0));
 
 }
 
 label {
- 	color:#666;
+ 	color:#4cff15;
   display:block;
   padding-bottom:9px;
 }
@@ -104,6 +106,8 @@ input[type=checkbox] {
 
 .p-container {
  	padding:0 20px 20px 20px;
+  align-items: center;
+  width: 210px;
 }
 
 .p-container:after {
@@ -115,8 +119,9 @@ input[type=checkbox] {
 .p-container span {
   display:block;
   float:left;
-  color:#0d93ff;
+  color:#00ff2f;
   padding-top:8px;
+  align-items: center;
 }
 
 input[type=submit] {
@@ -127,8 +132,8 @@ input[type=submit] {
     inset 0 1px 0 rgba(255,255,255,0.3),
     inset 0 10px 10px rgba(255,255,255,0.1);
   border-radius:0.3em;
-  background:#0184ff;
-  color:white;
+  background:#00ff51;
+  color:rgb(0, 0, 0);
   float:right;
   font-weight:bold;
   cursor:pointer;
